@@ -3,12 +3,12 @@ import os
 import time
 
 
-sckey=
-title=
+sckey="SCT253734TqNgReDJC8ztSvq2L1NY7hvmA"
+title="nimnew"
 #res = "success"
 #node_url = "https://mainnet.nimble.technology:443"
 #huface_url="https://huggingface.co:443"
-timeout=
+timeout=3*3600
 def is_internet_available():
     node_url = "https://mainnet.nimble.technology:443"
     huface_url="https://huggingface.co:443"
