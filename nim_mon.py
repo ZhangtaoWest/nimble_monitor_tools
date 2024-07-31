@@ -3,12 +3,12 @@ import os
 import time
 
 
-sckey="SCT253734TqNgReDJC8ztSvq2L1NY7hvmA"
-title="4060ti-io4-nimnew"
+sckey=
+title=
 #res = "success"
 #node_url = "https://mainnet.nimble.technology:443"
 #huface_url="https://huggingface.co:443"
-timeout=3*3600
+timeout=
 def is_internet_available():
     node_url = "https://mainnet.nimble.technology:443"
     huface_url="https://huggingface.co:443"
@@ -32,8 +32,8 @@ def mon_task():
         check_res="Success"
     else:
         check_res="Failed"
-    title=time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())+"--"+title
-    mon_url = 'https://sc.ftqq.com/%s.send?text=%s&desp=%s'%(sckey,title,check_res)
+    title_last=time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())+"--"+title
+    mon_url = 'https://sc.ftqq.com/%s.send?text=%s&desp=%s'%(sckey,title_last,check_res)
     requests.get(mon_url)
 if __name__ == "__main__":
     while True:
