@@ -31,6 +31,6 @@ pip3 install requests
 #sed -i "/^sckey=/c\sckey=$server_key" nim_mon.py
 #sed -i "/^timeout=/c\timeout=$time" nim_mon.py
 
-nohup python3 nim_mon.py >>/opt/mint.log 2>&1 &
+nohup python3 nim_mon.py >>/opt/mon.log 2>&1 &
 
 
